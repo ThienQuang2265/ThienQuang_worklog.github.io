@@ -1,54 +1,52 @@
 ---
 title: "Week 5 Worklog"
-date: "2025-09-22"
+date: "2025-10-06"
 weight: 5
 chapter: false
 pre: " <b> 1.5. </b> "
 ---
 
+**Week Duration: October 6 - October 12, 2025**
 
 ### Week 5 Objectives:
 
-* Connect and get acquainted with members of First Cloud Journey.
-* Understand basic AWS services, how to use the console & CLI.
+- Test ML models to determine which architecture best fits the dataset (XGBoost vs Neural Network)  
+- Understand why XGBoost consistently excels for tabular data  
+- Learn NoSQL and DynamoDB fundamentals and how they support scalable applications  
+- Build a baseline XGBoost model for the final project  
 
 ### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
 
+| Day         | Task                                                                                                                                                                                                                  | Start Date | Completion Date | Reference Material                                          |
+|-------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------|------------------|-------------------------------------------------------------|
+| Monday         | - **Model Architecture Testing:** <br>&emsp; + Compare XGBoost and Neural Networks <br>&emsp; + Evaluate training time, overfitting behavior, and validation performance                                             | 10/06/2025 | 10/06/2025       | ML Model Comparison Notes                                   |
+| Tuesday         | - **Why XGBoost Excels:** <br>&emsp; + Study tree-based advantages <br>&emsp; + Read research on XGBoost vs deep learning for tabular data                                                                          | 10/07/2025 | 10/07/2025       | https://arxiv.org/pdf/2207.08815                            |
+| Wednesday-Thursday         | - **DynamoDB & NoSQL Discovery:** <br>&emsp; + Learn NoSQL fundamentals <br>&emsp; + Understand DynamoDB's scalability model <br>&emsp; + Learn partition keys, sort keys, RCU/WCU, and autoscaling strategies      | 10/08/2025 | 10/09/2025       | https://www.youtube.com/watch?v=0buKQHokLK8                 |
+| Friday          | - **Baseline XGBoost Model:** <br>&emsp; + Build baseline XGBoost model <br>&emsp; + Perform hyperparameter tuning <br>&emsp; + Document metrics for later model comparison                                         | 10/10/2025 | 10/10/2025       | XGBoost Documentation                                       |
 
 ### Week 5 Achievements:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+- **Model Comparison Completed:**
+  - Tested XGBoost vs Neural Network performance  
+  - Identified the best architecture for the dataset based on accuracy, consistency, and training speed  
 
-* Successfully created and configured an AWS Free Tier account.
+- **Understanding XGBoost’s Strength:**
+  - Learned why tree-based models outperform deep learning on tabular data  
+  - Understood feature interaction modeling, natural handling of heterogeneous data, and boosting advantages  
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
+- **NoSQL & DynamoDB Knowledge:**
+  - Studied NoSQL principles and scalability benefits  
+  - Learned DynamoDB core concepts: partitioning, RCU/WCU, on-demand mode, and global tables  
+  - Understood when NoSQL is preferred over relational databases  
 
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
+- **Baseline XGBoost Model Completed:**
+  - Built and tested a baseline model  
+  - Tuned hyperparameters and recorded evaluation metrics  
+  - Established a foundation for future training and model optimization  
 
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+- **Technical Competencies:**
+  - Model comparison and selection  
+  - Tree-based model theory  
+  - NoSQL database design  
+  - Hands-on DynamoDB concepts  
+  - Baseline ML model development workflow  

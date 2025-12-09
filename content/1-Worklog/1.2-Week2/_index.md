@@ -6,109 +6,67 @@ chapter: false
 pre: " <b> 1.2. </b> "
 ---
 
-### Week 2 Objectives
+**Week Duration: September 15 - September 21, 2025**
 
-* Set up development environment with Linux Fedora for AWS services
-* Attend AWS Cloud Day 2025 and learn about new AWS technologies
-* Establish team workflow and project management processes
-* Apply AI-DLC (AI Driven Development Lifecycle) methodology with Kiro IDE
-* Explore AWS S3 buckets and basic AWS services
+### Week 2 Objectives:
 
-### Tasks Carried Out This Week
+* Strengthen foundational understanding of cloud computing concepts.
+* Learn the architecture and essential components of Amazon VPC (Virtual Private Cloud).
+* Understand how traffic flows inside a VPC using subnets, route tables, NAT Gateway, and Internet Gateway.
+* Gain a basic understanding of Amazon EC2, its features, and how to launch EC2 instances into a configured VPC.
+* Practice hands-on configuration of networking components using AWS Console.
+
+---
+
+### Tasks to be carried out this week:
 
 | Day | Task | Start Date | Completion Date | Reference Material |
-| --- | ---- | ---------- | --------------- | ------------------ |
-| 1 | - Set up Linux Fedora Environment for AWS services <br> - Troubleshooting Fedora installation and configuration <br> - Initial team planning about different AWS services | 15/09/2025 | 15/09/2025 | <https://cloudjourney.awsstudygroup.com/> |
-| 2 | - Continue Fedora environment configuration <br> - Register for AWS Cloud Day 2025 (18/Sep/2025) <br> - Team planning and coordination for upcoming activities | 16/09/2025 | 16/09/2025 | <https://cloudjourney.awsstudygroup.com/> |
-| 3 | - Team planning and workflow setup <br> - Set up team project management processes <br> - Discuss AWS services: VPC, IAM roles, AWS free tier missions | 17/09/2025 | 17/09/2025 | <https://cloudjourney.awsstudygroup.com/> |
-| 4 | - **AWS Cloud Day 2025:** <br>&emsp; + Explore AWS technology and services <br>&emsp; + Learn about Amazon Nova Act <br>&emsp; + Learn about Kiro AI Agent <br>&emsp; + Learn about AI-DLC methodology <br>&emsp; + Networking and gathering with AWS community | 18/09/2025 | 18/09/2025 | AWS Cloud Day 2025 Event |
-| 5 | - Apply AI-DLC methodology to create POCs in Kiro IDE <br> - Install Kiro IDE on Windows platform <br> - Test autonomous agentic AI workflow | 19/09/2025 | 19/09/2025 | Kiro IDE Documentation |
-| 6 | - Continue testing Kiro IDE capabilities <br> - Develop prompts for Kiro AI Agent <br> - Refine AI-DLC workflow processes | 20/09/2025 | 20/09/2025 | Kiro IDE Documentation |
+| --- | ---- | ---------- | ---------------- | ------------------ |
+| Monday | - Learned fundamental cloud computing concepts through video lessons | 09/15/2025 | 09/15/2025 | YouTube cloud basics playlist |
+| Tuesday | - Participated in CloudDay event | 09/16/2025 | 09/16/2025 | — |
+| Wednesday | - Practice configuring VPC and its components: subnets, route tables, IGW, NAT Gateway | 09/17/2025 | 09/17/2025 | https://000003.awsstudygroup.com/ |
+| Thursday | - Study EC2 basics and learned how to launch an EC2 instance inside a VPC | 09/18/2025 | 09/18/2025 | https://000004.awsstudygroup.com/, YouTube EC2 tutorial |
+| Friday | - Team meeting and decide on the final prioject | 09/19/2025 | 09/19/2025 | — |
 
+---
 
-### Week 2 Achievements
+### Week 2 Achievements:
 
-* **Development Environment Setup:**
-  * Successfully installed and configured Linux Fedora for AWS development
-  * Explored Fedora Linux features including themes, customization, and applications
-  * Troubleshot and optimized Fedora environment for development work
+#### **Cloud Fundamentals**
 
-![Fedora Linux Setup](/images/week2/fedora-setup.png)
-*Linux Fedora development environment configured for AWS services*
+* Understood key cloud computing concepts:
+  * What cloud infrastructure is.
+  * Why elasticity and scalability help prevent websites or applications from crashing during spikes in demand.
+  * Why cloud adoption is essential in a modern tech landscape where demand increases but not every organization can afford physical infrastructure.
 
-* **AWS Cloud Day 2025 Participation:**
-  * Attended AWS Cloud Day 2025 on September 18, 2025
-  * Learned about new AWS technologies and services:
-    * Amazon Nova Act - New AWS AI service
-    * Kiro AI Agent - Autonomous AI development assistant
-    * AI-DLC (AI Driven Development Lifecycle) - New SDLC methodology
-  * Networking with AWS professionals and community members
+---
 
-![AWS Cloud Day Event](/images/week2/aws-cloud-day.png)
-*AWS Cloud Day 2025 - Learning about new AWS technologies*
+#### **VPC (Virtual Private Cloud) Skills**
 
-* **Team Collaboration:**
-  * Established team workflow and project management processes
-  * Planned and discussed various AWS services including VPC, IAM roles
-  * Coordinated on AWS free tier missions and resource sharing
-  * Prepared for proposal and workshop implementation
+* Gained practical experience building a functional AWS VPC:
+  * Created public and private subnets.
+  * Learned how **CIDR blocks** define IP ranges in a VPC.
+  * Attached an **Internet Gateway (IGW)** to provide internet access to public subnets.
+  * Created a **NAT Gateway** to allow private subnets to securely access the internet.
+  * Configured **route tables** to control traffic flow and enhance security.
 
-* **AI-DLC Methodology Application:**
-  * Successfully installed Kiro IDE on Windows platform
-  * Applied AI-DLC methodology to create proof-of-concepts
-  * Tested autonomous agentic AI workflow capabilities
-  * Developed multiple prompts for effective AI agent interaction
+* Understood the logic behind:
+  * Public subnets → route through IGW.
+  * Private subnets → route through NAT Gateway or internal resources.
 
-![Kiro IDE Interface](/images/week2/kiro-ide.png)
-*Kiro IDE setup and AI-DLC workflow testing*
+* Learned the security benefits of separating workloads into public and private subnets.
 
-* **AWS Services Exploration:**
-  * Learned how to work with S3 buckets
-  * Explored basic AWS service architecture
-  * Understood AWS free tier limitations and best practices
+---
 
-* **Development Tools and Automation:**
-  * Cloned multiple FCJ (First Cloud Journey) repositories for reference
-  * Developed auto-register Chromium extension for daily office registration
-  * Troubleshot and optimized the extension for best performance
-  * Learned Hugo static site generator for documentation
+#### **EC2 (Elastic Compute Cloud) Skills**
 
-![Chromium Extension](/images/week2/chromium-extension.png)
-*Auto-register Chromium extension for office registration automation*
+* Understood fundamental EC2 concepts:
+  * Instance types (general-purpose, compute-optimized, memory-optimized, etc.)
+  * AMIs (operating system and base configuration)
+  * SSH key pairs and authentication
+  * Security Groups for traffic control
 
-![Hugo Setup](/images/week2/hugo-setup.png)
-*Hugo static site generator configuration*
-
-* **GitHub and Version Control:**
-  * Cloned and studied multiple FCJ repositories
-  * Practiced Git workflows and version control best practices
-
-### Challenges Faced
-
-* Minimal difficulties encountered during Week 2
-* Successfully resolved Fedora Linux installation and configuration issues through troubleshooting
-
-### Key Learnings
-
-* **New Technologies:**
-  * Amazon Nova Act capabilities and use cases
-  * AI-DLC (AI Driven Development Lifecycle) methodology and its application in modern software development
-  * Kiro AI Agent features and autonomous workflow capabilities
-
-* **AWS Services:**
-  * S3 bucket management and best practices
-  * Team collaboration on AWS free tier resources
-  * AWS service planning for proposals and workshops
-
-* **Development Skills:**
-  * Linux Fedora environment management
-  * Hugo static site generator
-  * Chromium extension development
-  * AI-driven development workflows
-
-### Next Week Goals
-
-* Continue exploring AWS services in depth
-* Apply AI-DLC methodology to more complex projects
-* Prepare detailed proposal for workshop implementation
-* Deepen understanding of VPC and IAM roles
+* Practiced launching EC2 instances into:
+  * A selected VPC
+  * A specific subnet
+  * Using configured security groups and key pairs

@@ -1,56 +1,49 @@
 ---
-title: "Worklog Tuần 4"
-date: "2025-09-22"
+title: "Worklog tuần 4"
+date: "2025-09-29"
 weight: 4
 chapter: false
 pre: " <b> 1.4. </b> "
 ---
 
+**Thời gian: 29 tháng 9 – 5 tháng 10, 2025**
 
-### Mục tiêu tuần 4:
+### Mục tiêu Tuần 4:
 
-* Kết nối, làm quen với các thành viên trong First Cloud Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+- Chuẩn bị bộ dữ liệu cuối cùng cho việc huấn luyện mô hình ML  
+- Học các kiến thức cơ bản về AWS Lambda và cách Lambda giúp giảm chi phí trong kiến trúc serverless  
+- Làm sạch và hoàn thiện bộ dữ liệu trước khi huấn luyện  
+- Học về CloudTrail và CloudWatch, bao gồm sự khác nhau và các trường hợp sử dụng  
+- Tìm hiểu cấu trúc và nguyên lý hoạt động của mô hình Transformer  
 
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+### Các nhiệm vụ thực hiện trong tuần:
 
+| Ngày       | Nhiệm vụ                                                                                                                                                                                         | Ngày Bắt Đầu | Ngày Hoàn Thành | Tài Liệu Tham Khảo                                 |
+|-----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|------------------|----------------------------------------------------|
+| Thứ Hai      | - **Khám phá AWS Lambda:** <br>&emsp; + Hiểu về Lambda và mô hình tính toán theo sự kiện <br>&emsp; + Xác định các trường hợp sử dụng Lambda để giảm chi phí cho project cuối                 | 29/09/2025 | 29/09/2025       | AWS Lambda Docs                                    |
+| Thứ Ba       | - **Làm sạch dữ liệu cuối:** <br>&emsp; + Làm sạch bộ dữ liệu <br>&emsp; + Loại bỏ nhiễu/outliers <br>&emsp; + Đảm bảo tính nhất quán trước khi huấn luyện                                      | 30/09/2025 | 30/09/2025       | Project Dataset Guidelines                         |
+| Thứ Tư - Thứ Năm     | - **CloudTrail & CloudWatch:** <br>&emsp; + Học tính năng audit của CloudTrail <br>&emsp; + Học CloudWatch metrics/logs/alarms <br>&emsp; + Hiểu sự khác nhau giữa hai dịch vụ | 01/10/2025 | 02/10/2025       | https://www.youtube.com/watch?v=S5X0PnBwp9I        |
+| Thứ Sáu         | - **Học mô hình Transformer:** <br>&emsp; + Học kiến trúc Transformer <br>&emsp; + Nghiên cứu cơ chế Attention và pipeline Encoder–Decoder                                            | 03/10/2025 | 03/10/2025       | https://www.youtube.com/watch?v=biveB0gOlak&t=5779s |
 
-### Kết quả đạt được tuần 4:
+### Thành tựu Tuần 4:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+- **Chuẩn bị bộ dữ liệu cuối cùng:**
+  - Tạo ra bộ dữ liệu tổng hợp chất lượng cao, sát thực tế  
+  - Đảm bảo phân phối chuẩn cho các đặc trưng chính  
+  - Loại bỏ các spikes bất thường và dữ liệu không nhất quán  
+  - Bộ dữ liệu đã sẵn sàng để huấn luyện mô hình  
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+- **Kiến thức AWS Lambda:**
+  - Hiểu mô hình tính toán theo sự kiện của Lambda  
+  - Biết cách Lambda giúp giảm chi phí so với EC2 luôn bật  
+  - Xác định được cách tích hợp Lambda vào project cuối  
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+- **Kiến thức về CloudTrail & CloudWatch:**
+  - Hiểu CloudTrail dùng để theo dấu và audit hoạt động tài khoản  
+  - Hiểu CloudWatch dùng để theo dõi metrics và logs  
+  - Nắm rõ sự khác biệt và cách hai dịch vụ bổ trợ cho nhau  
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+- **Kiến thức cơ bản về Transformer:**
+  - Học cơ chế Self-attention và Multi-head Attention  
+  - Hiểu quy trình Encoder/Decoder và Positional Encoding  
+  - Nhận thức được lý do Transformer vượt trội hơn RNN  

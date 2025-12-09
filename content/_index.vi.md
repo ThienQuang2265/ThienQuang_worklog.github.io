@@ -8,15 +8,16 @@ chapter: false
 # Báo cáo thực tập
 
 ### Thông tin sinh viên:
-&emsp; **Họ và tên:** Đỗ Đăng Khoa
 
-&emsp; **Số điện thoại:** 0783759971
+&emsp; **Họ và tên:** Nguyễn Huỳnh Thiên Quang
 
-&emsp; **Email:** khoado7577@gmail.com
+&emsp; **Số điện thoại:** 0975400508
+
+&emsp; **Email:** quangkootenhatvutru@gmail.com
 
 &emsp; **Trường:** Đại Học FPT
 
-&emsp; **Ngành:** Kỹ thuật phần mềm/ Thiết kế vi mạch
+&emsp; **Ngành:** Trí tuệ nhân tạo
 
 &emsp; **Lớp:** AWS082025
 
@@ -26,9 +27,7 @@ chapter: false
 
 &emsp; **Thời gian thực tập:** Từ ngày 12/08/2025 đến ngày 12/11/2025
 
-![Ảnh đại diện của bạn](/images/avatar.png?v=20250922)
-
-
+![Ảnh đại diện của bạn](/images/avatar.png)
 
 ### Nội dung báo cáo
 

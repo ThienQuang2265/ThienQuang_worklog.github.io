@@ -5,19 +5,19 @@ weight: 1
 chapter: false
 ---
 
-    
 # Internship Report
 
 ### Student Information:
-&emsp; **Full Name:** Đỗ Đăng Khoa
 
-&emsp; **Phone Number:** 0783759971 
+&emsp; **Full Name:** Nguyen Huynh Thien Quang
 
-&emsp; **Email:** khoado7577@gmail.com
+&emsp; **Phone Number:** 0975400508
+
+&emsp; **Email:** quangkootenhatvutru@gmail.com
 
 &emsp; **University:** FPT University
 
-&emsp; **Major:** Software Engineering/ IC design major
+&emsp; **Major:** Artificial Inteligent
 
 &emsp; **Class:** AWS082025
 
@@ -27,7 +27,7 @@ chapter: false
 
 &emsp; **Internship Duration:** From 12/08/2025 to 12/11/2025
 
-![Your profile picture](/images/avatar.png?v=20250922)
+![Your profile picture](/images/avatar.png)
 
 ### Report Content
 

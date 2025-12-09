@@ -1,54 +1,49 @@
 ---
 title: "Week 4 Worklog"
-date: "2025-09-22"
+date: "2025-09-29"
 weight: 4
 chapter: false
 pre: " <b> 1.4. </b> "
 ---
 
+**Week Duration: September 29 - October 5, 2025**
 
 ### Week 4 Objectives:
 
-* Connect and get acquainted with members of First Cloud Journey.
-* Understand basic AWS services, how to use the console & CLI.
+- Prepare final dataset for ML model training  
+- Learn AWS Lambda fundamentals and understand how it reduces cost in serverless workflows  
+- Clean and finalize the dataset for model training  
+- Study CloudTrail and CloudWatch, including their differences and use cases  
+- Learn the structure and working principles of the Transformer architecture  
 
 ### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
 
+| Day       | Task                                                                                                                                                                                         | Start Date | Completion Date | Reference Material                                 |
+|-----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------|------------------|----------------------------------------------------|
+| Monday      | - **AWS Lambda Exploration:** <br>&emsp; + Understand Lambda functions and event-driven compute <br>&emsp; + Identify Lambda use cases for cost reduction in final project                 | 09/29/2025 | 09/29/2025       | AWS Lambda Docs                                    |
+| Tuesday       | - **Final Data Cleaning:** <br>&emsp; + Clean dataset <br>&emsp; + Remove noise/outliers <br>&emsp; + Ensure consistency before training                                                    | 09/30/2025 | 09/30/2025       | Project Dataset Guidelines                         |
+| Wednesday-Thursday       | - **CloudTrail & CloudWatch:** <br>&emsp; + Learn AWS CloudTrail auditing features <br>&emsp; + Learn CloudWatch metrics/logs/alarms <br>&emsp; + Understand the difference between them | 10/01/2025 | 10/02/2025       | https://www.youtube.com/watch?v=S5X0PnBwp9I        |
+| Friday         | - **Transformer Model Study:** <br>&emsp; + Learn Transformer architecture <br>&emsp; + Study attention mechanisms and encoder-decoder pipeline                                            | 10/03/2025 | 10/03/2025       | https://www.youtube.com/watch?v=biveB0gOlak&t=5779s |
 
 ### Week 4 Achievements:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+- **Final Dataset Preparation:**
+  - Produced a realistic, high-quality synthetic dataset  
+  - Ensured normal distribution across key features  
+  - Removed unnatural spikes and inconsistent patterns  
+  - Final dataset ready for model training  
 
-* Successfully created and configured an AWS Free Tier account.
+- **AWS Lambda Knowledge:**
+  - Understood Lambda event-driven compute model  
+  - Learned how Lambda reduces cost compared to always-on EC2  
+  - Identified use cases for integrating Lambda into the final project  
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
+- **CloudTrail & CloudWatch Expertise:**
+  - Learned CloudTrail’s role in tracking account activity and auditing  
+  - Learned CloudWatch’s role in monitoring metrics and logs  
+  - Clearly understood the differences and how both services complement each other  
 
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
-
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+- **Transformer Architecture Fundamentals:**
+  - Studied self-attention and multi-head attention  
+  - Understood encoder/decoder flow and positional encoding  
+  - Gained insight into why Transformers outperform RNNs 

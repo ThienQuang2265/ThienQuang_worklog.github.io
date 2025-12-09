@@ -1,56 +1,35 @@
 ---
-title: "Worklog Tuần 10"
-date: "2025-09-22"
+title: "Worklog tuần 10"
+date: "2025-11-10"
 weight: 10
 chapter: false
 pre: " <b> 1.10. </b> "
 ---
 
+**Khoảng thời gian: 10 – 16 tháng 11, 2025**
 
 ### Mục tiêu tuần 10:
 
-* Kết nối, làm quen với các thành viên trong First Cloud Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+- Học về Retrieval-Augmented Generation (RAG) và các ứng dụng của nó.
+- Tìm hiểu cách RAG cải thiện hiệu suất mô hình bằng dữ liệu riêng của doanh nghiệp.
+- Triển khai hệ thống RAG trong môi trường local.
+- Sử dụng LangChain và Bedrock API để xây dựng pipeline RAG hoàn chỉnh.
 
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+### Các nhiệm vụ thực hiện trong tuần:
+
+| Ngày | Nhiệm vụ | Ngày bắt đầu | Ngày hoàn thành | Tài liệu tham khảo |
+| --- | -------- | ------------- | ---------------- | ------------------ |
+| Thứ Hai | - Học các khái niệm cơ bản về RAG <br> &emsp;+ Use cases <br> &emsp;+ Kiến trúc <br> &emsp;+ Vector databases | 10/11/2025 | 10/11/2025 | RAG Docs |
+| Thứ Ba–Thứ Năm | - Triển khai RAG trong môi trường local <br> &emsp;+ Xây dựng pipeline bằng LangChain <br> &emsp;+ Kiểm thử embeddings và retrievers <br> &emsp;+ Tích hợp Bedrock API | 11/11/2025 | 13/11/2025 | LangChain + Bedrock Docs |
+| Thứ Sáu | - Chạy thành công hệ thống RAG hoàn chỉnh trong local <br> - Kiểm thử chất lượng truy xuất và phản hồi | 14/11/2025 | 14/11/2025 | Project Notes |
+| Thứ Bảy | - Tham gia sự kiện AWS Mastery 1: AWS AI/ML & GenAI Workshop  | 14/11/2025 | 14/11/2025 | Project Notes |
+
 
 
 ### Kết quả đạt được tuần 10:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+- Hiểu cách RAG giúp doanh nghiệp tận dụng dữ liệu nội bộ.
+- Sử dụng thành thạo LangChain cho các workflow liên quan đến RAG và LLM.
+- Dùng Bedrock API thành công cho embeddings và inference.
+- Xây dựng và vận hành hoàn chỉnh hệ thống RAG trong môi trường local.
+- Hiểu cơ bản về GenAI và cách triển khai 1 mô hình sử dụng dịch vụ AWS

@@ -1,56 +1,33 @@
 ---
-title: "Worklog Tuần 9"
-date: "2025-09-22"
+title: "Worklog tuần 9"
+date: "2025-11-03"
 weight: 9
 chapter: false
 pre: " <b> 1.9. </b> "
 ---
 
+**Khoảng thời gian tuần: 3 – 9 tháng 11, 2025**
 
 ### Mục tiêu tuần 9:
 
-* Kết nối, làm quen với các thành viên trong First Cloud Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+- Triển khai mô hình auto_scoring vào môi trường AWS.
+- Học cách Lambda Layer hoạt động và cách đóng gói dependencies.
+- Thực hành build Docker image và đẩy lên Amazon ECR.
+- Triển khai mô hình thành công bằng Lambda sử dụng ECR container.
 
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+### Các nhiệm vụ thực hiện trong tuần:
 
+| Ngày | Nhiệm vụ | Ngày bắt đầu | Ngày hoàn thành | Tài liệu tham khảo |
+| --- | -------- | ------------- | ---------------- | ------------------ |
+| Thứ Hai | - Triển khai mô hình auto_scoring lên môi trường AWS <br> &emsp;+ Kiểm tra inference cơ bản | 03/11/2025 | 03/11/2025 | Project Docs |
+| Thứ Ba–Thứ Tư | - Học quản lý dependencies cho Lambda <br> &emsp;+ Tạo Lambda layers <br> &emsp;+ Kiểm tra giới hạn kích thước <br> &emsp;+ Tìm hiểu các phương pháp triển khai thay thế | 04/11/2025 | 05/11/2025 | AWS Lambda Docs |
+| Thứ Năm | - Build Docker image cho mô hình <br> - Đẩy image lên Amazon ECR <br> - Cấu hình IAM permissions | 06/11/2025 | 06/11/2025 | AWS ECR Docs |
+| Thứ Sáu | - Deploy Lambda bằng container từ ECR <br> - Chạy kiểm thử inference của mô hình | 07/11/2025 | 07/11/2025 | AWS Lambda + ECR Docs |
 
 ### Kết quả đạt được tuần 9:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+- Hiểu giới hạn kích thước của Lambda Layers.
+- Đóng gói mô hình ML thành công bằng Docker image.
+- Đẩy image lên Amazon ECR và triển khai lên Lambda.
+- Triển khai hoàn chỉnh mô hình auto_scoring trong AWS bằng container.
+- Hiểu vai trò quan trọng của ECR đối với các mô hình ML lớn có nhiều dependencies.

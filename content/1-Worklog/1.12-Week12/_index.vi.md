@@ -1,55 +1,33 @@
 ---
 title: "Worklog Tuần 12"
-date: "2025-09-22"
+date: "2025-11-24"
 weight: 12
 chapter: false
-pre: " <b> 1.12 </b> "
+pre: " <b> 1.12. </b> "
 ---
+
+**Khoảng thời gian: 24 – 30 tháng 11, 2025**
 
 ### Mục tiêu tuần 12:
 
-* Kết nối, làm quen với các thành viên trong First Cloud Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+- Học và triển khai AWS Bedrock Knowledge Base.  
+- Cấu hình ingestion, embeddings và retrieval.  
+- Tìm và chuẩn bị tài liệu để upload vào Knowledge Base.  
+- Kiểm thử hiệu suất của Knowledge Base cho các tác vụ liên quan đến RAG.
 
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+### Nhiệm vụ thực hiện trong tuần:
 
+| Ngày | Nhiệm vụ | Ngày bắt đầu | Ngày hoàn thành | Tài liệu tham khảo |
+| --- | -------- | ------------- | ---------------- | ------------------ |
+| Thứ Hai–Thứ Ba | - Học và triển khai Bedrock Knowledge Base <br> &emsp;+ Cấu hình vector store <br> &emsp;+ Thiết lập ingestion | 24/11/2025 | 25/11/2025 | Bedrock Docs |
+| Thứ Tư–Thứ Sáu | - Thu thập tài liệu để ingestion <br> - Upload và kiểm thử hiệu suất Knowledge Base | 26/11/2025 | 28/11/2025 | Project Notes |
+| Thứ Bảy | - Tham dự sự kiện AWS Mastery 3: AWS Security Specialty Workshop <br> | 26/11/2025 | 28/11/2025 | Project Notes |
 
 ### Kết quả đạt được tuần 12:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
+- Triển khai thành công hệ thống RAG sử dụng Bedrock Knowledge Base với thiết lập rất đơn giản.  
+- Tránh được các vấn đề giới hạn dung lượng và dependency khi triển khai RAG thủ công.  
+- Hiểu cách S3 Vector Engine giúp giảm chi phí hơn so với việc chạy PostgreSQL/RDS liên tục.  
+- Khẳng định rằng Bedrock Knowledge Base đơn giản hóa và tăng tốc quá trình phát triển RAG.
+- Học các kiến thức bảo mật cơ bản và cách các dịch vụ AWS có thể hỗ trợ
 

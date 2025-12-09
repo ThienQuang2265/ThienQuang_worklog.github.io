@@ -1,55 +1,44 @@
 ---
-title: "Worklog Tuần 6"
-date: "2025-09-22"
+title: "Worklog tuần 6"
+date: "2025-10-13"
 weight: 6
 chapter: false
 pre: " <b> 1.6. </b> "
 ---
 
+**Thời gian: 13 tháng 10 – 19 tháng 10, 2025**
 
-### Mục tiêu tuần 6:
+### Mục tiêu Tuần 6:
 
-* Kết nối, làm quen với các thành viên trong First Cloud Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+- Fine-tune và tối ưu mô hình XGBoost cho bộ dữ liệu cuối cùng  
+- Hoàn tất quá trình training và validation trong môi trường local  
+- Tham gia workshop AWS AI/ML để khám phá các công cụ ML trên cloud  
+- Học kiến thức nền tảng về AWS CloudFront và Route 53 (CDN và DNS)  
 
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+### Các nhiệm vụ thực hiện trong tuần:
 
+| Ngày              | Nhiệm vụ                                                                                                                                                                                                                  | Ngày Bắt Đầu | Ngày Hoàn Thành | Tài Liệu Tham Khảo               |
+|------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|------------------|----------------------------------|
+| Thứ Hai – Thứ Ba | - **Fine-tuning XGBoost:** <br>&emsp; + Điều chỉnh hyperparameter (learning rate, depth, subsample, regularization) <br>&emsp; + Đánh giá hiệu năng và tránh overfitting                                                   | 13/10/2025   | 14/10/2025       | XGBoost Documentation            |
+| Thứ Tư           | - **Hoàn tất training local:** <br>&emsp; + Train mô hình XGBoost cuối <br>&emsp; + Kiểm tra lại pipeline tiền xử lý <br>&emsp; + Lưu mô hình (model artifacts)                                                          | 15/10/2025   | 15/10/2025       | Local Development Notebook       |
+| Thứ Năm         | - **AWS AI/ML Workshop:** <br>&emsp; + Tham gia các phiên học <br>&emsp; + Khám phá Textract, Comprehend, SageMaker <br>&emsp; + Học best practices của workflow ML trong AWS                                              | 16/10/2025   | 16/10/2025       | AWS Workshop Materials           |
+| Thứ Sáu         | - **Học CloudFront & Route 53:** <br>&emsp; + Tìm hiểu caching, giảm độ trễ trong CDN <br>&emsp; + Học DNS routing, cấu hình tên miền, health checks                                                                      | 17/10/2025   | 17/10/2025       | CloudFront & Route 53 Docs       |
 
-### Kết quả đạt được tuần 6:
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+### Thành tựu Tuần 6:
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+- **Hoàn thành mô hình XGBoost:**
+  - Tối ưu hyperparameter  
+  - Train phiên bản mô hình cuối  
+  - Đạt hiệu năng tốt nhất trên bộ dữ liệu  
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+- **Pipeline training hoàn chỉnh:**
+  - Hoàn tất training và evaluation trong môi trường local  
+  - Xác thực pipeline tiền xử lý  
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
+- **Bài học từ AWS AI/ML Workshop:**
+  - Khám phá cách Textract và Comprehend hỗ trợ xây dựng ứng dụng AI end-to-end  
+  - Hiểu rõ hơn về các công cụ và workflow ML trong AWS  
 
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+- **Kiến thức CloudFront & Route 53:**
+  - Hiểu cơ chế phân phối nội dung toàn cầu của CDN và cách CloudFront dùng edge location để giảm độ trễ  
+  - Nắm DNS routing, quản lý domain và health checks  

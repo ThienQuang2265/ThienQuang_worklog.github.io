@@ -6,111 +6,68 @@ chapter: false
 pre: " <b> 1.2. </b> "
 ---
 
-### Mục tiêu tuần 2
+**Thời gian: 15/09/2025 – 21/09/2025**
 
-* Thiết lập môi trường phát triển với Linux Fedora cho các dịch vụ AWS
-* Tham dự AWS Cloud Day 2025 và tìm hiểu về các công nghệ AWS mới
-* Thiết lập quy trình làm việc nhóm và quản lý dự án
-* Áp dụng phương pháp AI-DLC (AI Driven Development Lifecycle) với Kiro IDE
-* Khám phá AWS S3 buckets và các dịch vụ AWS cơ bản
+### Mục tiêu Tuần 2:
 
-### Các công việc đã triển khai trong tuần này
+* Củng cố kiến thức nền tảng về điện toán đám mây.
+* Học kiến trúc và các thành phần quan trọng của Amazon VPC (Virtual Private Cloud).
+* Hiểu cách luồng mạng hoạt động bên trong VPC thông qua subnets, route tables, NAT Gateway và Internet Gateway.
+* Nắm kiến thức cơ bản về Amazon EC2, các tính năng của nó và cách launch EC2 vào một VPC đã cấu hình.
+* Thực hành cấu hình các thành phần mạng bằng AWS Console.
 
-| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
-| --- | --------- | ------------ | --------------- | -------------- |
-| 1 | - Thiết lập môi trường Linux Fedora cho các dịch vụ AWS <br> - Khắc phục sự cố cài đặt và cấu hình Fedora <br> - Lập kế hoạch nhóm ban đầu về các dịch vụ AWS khác nhau | 15/09/2025 | 15/09/2025 | <https://cloudjourney.awsstudygroup.com/> |
-| 2 | - Tiếp tục cấu hình môi trường Fedora <br> - Đăng ký tham dự AWS Cloud Day 2025 (18/09/2025) <br> - Lập kế hoạch và phối hợp nhóm cho các hoạt động sắp tới | 16/09/2025 | 16/09/2025 | <https://cloudjourney.awsstudygroup.com/> |
-| 3 | - Lập kế hoạch nhóm và thiết lập quy trình làm việc <br> - Thiết lập quy trình quản lý dự án nhóm <br> - Thảo luận về các dịch vụ AWS: VPC, IAM roles, AWS free tier missions | 17/09/2025 | 17/09/2025 | <https://cloudjourney.awsstudygroup.com/> |
-| 4 | - **AWS Cloud Day 2025:** <br>&emsp; + Khám phá công nghệ và dịch vụ AWS <br>&emsp; + Tìm hiểu về Amazon Nova Act <br>&emsp; + Tìm hiểu về Kiro AI Agent <br>&emsp; + Tìm hiểu về phương pháp AI-DLC <br>&emsp; + Giao lưu và kết nối với cộng đồng AWS | 18/09/2025 | 18/09/2025 | Sự kiện AWS Cloud Day 2025 |
-| 5 | - Áp dụng phương pháp AI-DLC để tạo POCs trong Kiro IDE <br> - Cài đặt Kiro IDE trên nền tảng Windows <br> - Kiểm tra quy trình AI tự động | 19/09/2025 | 19/09/2025 | Tài liệu Kiro IDE |
-| 6 | - Tiếp tục kiểm tra khả năng của Kiro IDE <br> - Phát triển prompts cho Kiro AI Agent <br> - Tinh chỉnh quy trình AI-DLC | 20/09/2025 | 20/09/2025 | Tài liệu Kiro IDE |
+---
 
+### Nhiệm vụ cần thực hiện trong tuần:
 
-### Kết quả đạt được tuần 2
+| Ngày | Nhiệm vụ | Ngày bắt đầu | Ngày hoàn thành | Tài liệu tham khảo |
+| --- | ---- | ---------- | ---------------- | ------------------ |
+| Thứ Hai | - Học các khái niệm cloud computing cơ bản qua video | 09/15/2025 | 09/15/2025 | YouTube cloud basics playlist |
+| Thứ Ba | - Tham gia sự kiện CloudDay | 09/16/2025 | 09/16/2025 | — |
+| Thứ Tư | - Thực hành cấu hình VPC và các thành phần: subnets, route tables, IGW, NAT Gateway | 09/17/2025 | 09/17/2025 | https://000003.awsstudygroup.com/ |
+| Thứ Năm | - Học kiến thức EC2 cơ bản và cách launch EC2 vào VPC | 09/18/2025 | 09/18/2025 | https://000004.awsstudygroup.com/, YouTube EC2 tutorial |
+| Thứ Sáu | - Họp nhóm và thống nhất ý tưởng dự án cuối khóa | 09/19/2025 | 09/19/2025 | — |
 
-* **Thiết lập môi trường phát triển:**
-  * Cài đặt và cấu hình thành công Linux Fedora cho phát triển AWS
-  * Khám phá các tính năng của Fedora Linux bao gồm themes, tùy chỉnh và ứng dụng
-  * Khắc phục sự cố và tối ưu hóa môi trường Fedora cho công việc phát triển
+---
 
-![Thiết lập Fedora Linux](/images/week2/fedora-setup.png)
-*Môi trường phát triển Linux Fedora được cấu hình cho các dịch vụ AWS*
+### Thành tựu Tuần 2:
 
-* **Tham dự AWS Cloud Day 2025:**
-  * Tham dự AWS Cloud Day 2025 vào ngày 18 tháng 9 năm 2025
-  * Tìm hiểu về các công nghệ và dịch vụ AWS mới:
-    * Amazon Nova Act - Dịch vụ AI mới của AWS
-    * Kiro AI Agent - Trợ lý phát triển AI tự động
-    * AI-DLC (AI Driven Development Lifecycle) - Phương pháp SDLC mới
-  * Giao lưu với các chuyên gia AWS và thành viên cộng đồng
+#### **Kiến thức về Cloud Cơ bản**
 
-![Sự kiện AWS Cloud Day](/images/week2/aws-cloud-day.png)
-*AWS Cloud Day 2025 - Tìm hiểu về các công nghệ AWS mới*
+* Hiểu rõ các khái niệm then chốt trong điện toán đám mây:
+  * Cloud infrastructure là gì.  
+  * Vì sao elasticity & scalability giúp tránh việc ứng dụng/website bị quá tải khi nhu cầu tăng đột biến.  
+  * Vì sao cloud quan trọng trong bối cảnh công nghệ hiện đại, khi nhu cầu tăng nhưng không phải tổ chức nào cũng đủ chi phí cho hạ tầng vật lý.  
 
-* **Hợp tác nhóm:**
-  * Thiết lập quy trình làm việc nhóm và quản lý dự án
-  * Lập kế hoạch và thảo luận về các dịch vụ AWS khác nhau bao gồm VPC, IAM roles
-  * Phối hợp về các nhiệm vụ AWS free tier và chia sẻ tài nguyên
-  * Chuẩn bị cho đề xuất và triển khai workshop
+---
 
-* **Áp dụng phương pháp AI-DLC:**
-  * Cài đặt thành công Kiro IDE trên nền tảng Windows
-  * Áp dụng phương pháp AI-DLC để tạo các proof-of-concepts
-  * Kiểm tra khả năng quy trình AI tự động
-  * Phát triển nhiều prompts để tương tác hiệu quả với AI agent
+#### **Kiến thức về VPC (Virtual Private Cloud)**
 
-![Giao diện Kiro IDE](/images/week2/kiro-ide.png)
-*Thiết lập Kiro IDE và kiểm tra quy trình AI-DLC*
+* Có kinh nghiệm thực hành xây dựng một AWS VPC hoàn chỉnh:
+  * Tạo public và private subnet.  
+  * Hiểu cách **CIDR blocks** xác định dải IP trong VPC.  
+  * Gắn **Internet Gateway (IGW)** để cấp Internet cho public subnet.  
+  * Tạo **NAT Gateway** để cho private subnet truy cập Internet an toàn.  
+  * Cấu hình **route tables** để điều hướng lưu lượng mạng và tăng cường bảo mật.  
 
-* **Khám phá dịch vụ AWS:**
-  * Học cách làm việc với S3 buckets
-  * Khám phá kiến trúc dịch vụ AWS cơ bản
-  * Hiểu về giới hạn AWS free tier và các phương pháp hay nhất
+* Hiểu logic định tuyến:
+  * Public subnet → route qua IGW  
+  * Private subnet → route qua NAT Gateway hoặc tài nguyên nội bộ  
 
-* **Công cụ phát triển và tự động hóa:**
-  * Clone nhiều repository FCJ (First Cloud Journey) để tham khảo
-  * Phát triển extension Chromium tự động đăng ký cho việc đăng ký văn phòng hàng ngày
-  * Khắc phục sự cố và tối ưu hóa extension để có hiệu suất tốt nhất
-  * Học Hugo static site generator cho tài liệu
+* Hiểu lợi ích bảo mật của việc tách workloads thành public và private subnets.
 
-![Extension Chromium](/images/week2/chromium-extension.png)
-*Extension Chromium tự động đăng ký cho tự động hóa đăng ký văn phòng*
+---
 
-![Thiết lập Hugo](/images/week2/hugo-setup.png)
-*Cấu hình Hugo static site generator*
+#### **Kiến thức về EC2 (Elastic Compute Cloud)**
 
-* **GitHub và kiểm soát phiên bản:**
-  * Clone và nghiên cứu nhiều repository FCJ
-  * Thực hành quy trình Git và các phương pháp hay nhất về kiểm soát phiên bản
+* Nắm được các khái niệm EC2 cơ bản:
+  * Các loại instance (general-purpose, compute-optimized, memory-optimized, …)  
+  * AMI (hệ điều hành và cấu hình nền tảng)  
+  * SSH key pairs và xác thực  
+  * Security Groups để kiểm soát traffic  
 
-### Thách thức gặp phải
-
-* Gặp ít khó khăn trong tuần 2
-* Đã giải quyết thành công các vấn đề cài đặt và cấu hình Fedora Linux thông qua khắc phục sự cố
-
-### Bài học chính
-
-* **Công nghệ mới:**
-  * Khả năng và trường hợp sử dụng của Amazon Nova Act
-  * Phương pháp AI-DLC (AI Driven Development Lifecycle) và ứng dụng của nó trong phát triển phần mềm hiện đại
-  * Các tính năng của Kiro AI Agent và khả năng quy trình tự động
-
-* **Dịch vụ AWS:**
-  * Quản lý S3 bucket và các phương pháp hay nhất
-  * Hợp tác nhóm về tài nguyên AWS free tier
-  * Lập kế hoạch dịch vụ AWS cho đề xuất và workshops
-
-* **Kỹ năng phát triển:**
-  * Quản lý môi trường Linux Fedora
-  * Hugo static site generator
-  * Phát triển extension Chromium
-  * Quy trình phát triển dựa trên AI
-
-### Mục tiêu tuần tới
-
-* Tiếp tục khám phá các dịch vụ AWS chuyên sâu
-* Áp dụng phương pháp AI-DLC cho các dự án phức tạp hơn
-* Chuẩn bị đề xuất chi tiết cho triển khai workshop
-* Tìm hiểu sâu hơn về VPC và IAM roles
-
+* Thực hành launch EC2 trong:
+  * Một VPC đã chọn  
+  * Một subnet cụ thể  
+  * Với security groups và key pairs đã cấu hình  
 

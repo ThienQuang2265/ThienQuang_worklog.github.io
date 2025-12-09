@@ -1,56 +1,27 @@
 ---
-title: "Worklog Tuần 8"
-date: "2025-09-22"
+title: "Worklog tuần 8"
+date: "2025-10-27"
 weight: 8
 chapter: false
 pre: " <b> 1.8. </b> "
 ---
 
+**Khoảng thời gian: 27 tháng 10 – 02 tháng 11**
 
 ### Mục tiêu tuần 8:
 
-* Kết nối, làm quen với các thành viên trong First Cloud Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+- Ôn lại các dịch vụ AWS cốt lõi để chuẩn bị cho bài kiểm tra giữa kỳ.
+- Học các trụ cột của AWS Well-Architected Framework.
+- Hiểu cách mỗi trụ cột ảnh hưởng đến kiến trúc cloud và các best practice.
 
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+### Các nhiệm vụ thực hiện trong tuần:
 
+| Ngày | Nhiệm vụ | Ngày bắt đầu | Ngày hoàn thành | Tài liệu tham khảo |
+| --- | -------- | ------------- | ---------------- | ------------------ |
+| Thứ Hai–Thứ Sáu | - Ôn lại các dịch vụ AWS (IAM, EC2, S3, RDS, VPC, Lambda, CloudWatch, CloudTrail) <br> - Học 6 trụ cột của AWS Well-Architected Framework: <br> &emsp;+ Operational Excellence (Vận hành xuất sắc) <br> &emsp;+ Security (Bảo mật) <br> &emsp;+ Reliability (Độ tin cậy) <br> &emsp;+ Performance Efficiency (Hiệu suất) <br> &emsp;+ Cost Optimization (Tối ưu chi phí) <br> &emsp;+ Sustainability (Bền vững) | 27/10/2025 | 31/10/2025 | AWS WAF Whitepaper |
 
 ### Kết quả đạt được tuần 8:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+- Hoàn thành ôn tập các dịch vụ AWS cho bài kiểm tra giữa kỳ.
+- Hiểu toàn bộ các trụ cột của Well-Architected Framework và cách chúng định hướng kiến trúc cloud.
+- Củng cố kiến thức AWS trước khi bước vào các giai đoạn dự án nâng cao.

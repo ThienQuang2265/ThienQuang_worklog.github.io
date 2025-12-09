@@ -1,56 +1,30 @@
 ---
-title: "Worklog Tuần 7"
-date: "2025-09-22"
+title: "Worklog tuần 7"
+date: "2025-10-20"
 weight: 7
 chapter: false
 pre: " <b> 1.7. </b> "
 ---
 
+**Thời gian: 20 – 26 tháng 10, 2025**
 
-### Mục tiêu tuần 7:
+### Mục tiêu Tuần 7:
 
-* Kết nối, làm quen với các thành viên trong First Cloud Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+- Học AWS RDS và các hệ quản trị cơ sở dữ liệu mà RDS hỗ trợ.  
+- Tìm hiểu cách tạo và cấu hình một RDS instance.  
+- Học các dịch vụ bảo mật của AWS (Cognito, WAF, GuardDuty, …).  
+- Ôn tập kiến thức AWS để chuẩn bị cho bài kiểm tra giữa kỳ.  
 
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+### Các nhiệm vụ thực hiện trong tuần:
 
+| Ngày | Nhiệm vụ | Ngày Bắt Đầu | Ngày Hoàn Thành | Tài Liệu Tham Khảo |
+|------|----------|--------------|------------------|---------------------|
+| Thứ Hai | - Học cơ bản về AWS RDS <br> &emsp;+ Tìm hiểu các engine: MySQL, PostgreSQL, MariaDB, Aurora, Oracle, SQL Server <br> &emsp;+ Học cách tạo một RDS instance | 20/10/2025 | 20/10/2025 | AWS RDS Docs |
+| Thứ Ba – Thứ Tư | - Học các dịch vụ bảo mật AWS <br> &emsp;+ Luồng xác thực Cognito <br> &emsp;+ Lọc traffic bằng WAF <br> &emsp;+ Phát hiện mối đe dọa với GuardDuty | 21/10/2025 | 22/10/2025 | AWS Security Docs |
+| Thứ Năm – Thứ Sáu | - Ôn tập các dịch vụ AWS cho bài kiểm tra giữa kỳ <br> &emsp;+ Compute, Storage, IAM, VPC, Networking, Security, Monitoring | 23/10/2025 | 24/10/2025 | Lecture Notes |
 
-### Kết quả đạt được tuần 7:
+### Thành tựu Tuần 7:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+- Hiểu cách RDS hoạt động và cách triển khai một database instance.  
+- Nắm kiến thức cốt lõi của các dịch vụ bảo mật AWS và trường hợp sử dụng.  
+- Hoàn tất ôn tập giữa kỳ về compute, storage, networking và security.  

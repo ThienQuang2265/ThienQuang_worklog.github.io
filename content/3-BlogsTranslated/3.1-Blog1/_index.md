@@ -1,123 +1,77 @@
 ---
-title: "Blog 1"
-date: "2025-09-22"
+title: "Blog : Meeting the AWS Team"
+date: "2025-05-05"
 weight: 1
 chapter: false
-pre: " <b> 3.1. </b> "
+pre: " <b> 4.1. </b> "
 ---
 
-# Getting Started with Healthcare Data Lakes: Using Microservices
+{{% notice warning %}}
+⚠️ **Lưu ý:** Bài viết dưới đây được giữ **nguyên văn 100%** theo yêu cầu của bạn.
+{{% /notice %}}
 
-Data lakes can help hospitals and healthcare facilities turn data into business insights, maintain business continuity, and protect patient privacy. A **data lake** is a centralized, managed, and secure repository to store all your data, both in its raw and processed forms for analysis. Data lakes allow you to break down data silos and combine different types of analytics to gain insights and make better business decisions.
+# **Meet the AWS News Blog team!**
 
-This blog post is part of a larger series on getting started with setting up a healthcare data lake. In my final post of the series, *“Getting Started with Healthcare Data Lakes: Diving into Amazon Cognito”*, I focused on the specifics of using Amazon Cognito and Attribute Based Access Control (ABAC) to authenticate and authorize users in the healthcare data lake solution. In this blog, I detail how the solution evolved at a foundational level, including the design decisions I made and the additional features used. You can access the code samples for the solution in this Git repo for reference.
-
----
-
-## Architecture Guidance
-
-The main change since the last presentation of the overall architecture is the decomposition of a single service into a set of smaller services to improve maintainability and flexibility. Integrating a large volume of diverse healthcare data often requires specialized connectors for each format; by keeping them encapsulated separately as microservices, we can add, remove, and modify each connector without affecting the others. The microservices are loosely coupled via publish/subscribe messaging centered in what I call the “pub/sub hub.”
-
-This solution represents what I would consider another reasonable sprint iteration from my last post. The scope is still limited to the ingestion and basic parsing of **HL7v2 messages** formatted in **Encoding Rules 7 (ER7)** through a REST interface.
-
-**The solution architecture is now as follows:**
-
-> *Figure 1. Overall architecture; colored boxes represent distinct services.*
+**By:** Channy Yun (윤석찬)  
+**Date:** 01 APR 2025  
+**Categories:** Announcements, Featured, News
 
 ---
 
-While the term *microservices* has some inherent ambiguity, certain traits are common:  
-- Small, autonomous, loosely coupled  
-- Reusable, communicating through well-defined interfaces  
-- Specialized to do one thing well  
-- Often implemented in an **event-driven architecture**
+Now that Jeff Barr has retired from the AWS News Blog as of December last year, the AWS News Blog team will keep sharing the most important and impactful AWS product launches the moment they become available. I want to quote Jeff’s last comment on the future of the News Blog again:
 
-When determining where to draw boundaries between microservices, consider:  
-- **Intrinsic**: technology used, performance, reliability, scalability  
-- **Extrinsic**: dependent functionality, rate of change, reusability  
-- **Human**: team ownership, managing *cognitive load*
+> Going forward, the team will continue to grow and the goal remains the same: to provide our customers with carefully chosen, high-quality information about the latest and most meaningful AWS launches. The blog is in great hands and this team will continue to keep you informed even as the AWS pace of innovation continues to accelerate.
+
+Since 2016, Jeff has been building the AWS News Blog as a team. Currently, we’re a group of 11 bloggers working in North America, South America, Asia, Europe, and Africa. We co-work with AWS product teams, testing new features firsthand on behalf of customers, and delivering key details in the News Blog the way Jeff has always done.
 
 ---
 
-## Technology Choices and Communication Scope
+# **Voices from blog authors**
+You may be familiar with the names of News Blog authors, but you may not have had the chance to hear about them. Let us introduce ourselves!
 
-| Communication scope                       | Technologies / patterns to consider                                                        |
-| ----------------------------------------- | ------------------------------------------------------------------------------------------ |
-| Within a single microservice              | Amazon Simple Queue Service (Amazon SQS), AWS Step Functions                               |
-| Between microservices in a single service | AWS CloudFormation cross-stack references, Amazon Simple Notification Service (Amazon SNS) |
-| Between services                          | Amazon EventBridge, AWS Cloud Map, Amazon API Gateway                                      |
+## **Channy Yun (윤석찬)**
+I’m honored to continue Jeff’s legacy as the new lead blogger of the News Blog team; he is my role model. When I joined AWS in 2014, the first thing I did was to create the AWS Korea Blog and I started translating Jeff’s blog posts into the Korean language. During the journey, I learned how to write accurate, honest, and powerful guides to help customers get started with new AWS products and features.
 
----
+## **Danilo Poccia**
+Since my first News Blog post in 2018, I have learned so much by being part of this team. Working with product managers and service teams is always an amazing experience. I am interested in serverless, event-driven architectures, and AI/ML. It’s incredible how technologies like generative AI are becoming part of software development implicitly (through AI-enabled development tools) and explicitly (by using models in code).
 
-## The Pub/Sub Hub
+## **Sébastien Stormacq**
+I’m fortunate to have been a part of this team since 2019. When I don’t write posts, I produce episodes of the AWS Developers Podcast and le podcast AWS en français. I also work with the teams for Amazon EC2 Mac, AWS SDK for Swift, and the CodeBuild and CodeArtifact teams trying to make the AWS Cloud easier to use for Apple developers. My pet project is the Swift Runtime for AWS Lambda.
 
-Using a **hub-and-spoke** architecture (or message broker) works well with a small number of tightly related microservices.  
-- Each microservice depends only on the *hub*  
-- Inter-microservice connections are limited to the contents of the published message  
-- Reduces the number of synchronous calls since pub/sub is a one-way asynchronous *push*
+## **Veliswa Boya**
+The Amazon Leadership Principles (LPs) guide all that we do here at AWS, including the work we do as authors of the News Blog. As a developer advocate, I’ve taken the guidance of the LPs and used it to guide members of the AWS community who are looking to create technical content, especially those new in their technical content creation journey.
 
-Drawback: **coordination and monitoring** are needed to avoid microservices processing the wrong message.
+## **Donnie Prakoso**
+Just like brewing coffee, being a blog author has been a mix of fun, challenge, and reward. I’ve been particularly fortunate to observe how customer obsession is built into AWS teams. I’ve seen how they work backwards, transforming your feedback into services or features. I genuinely hope that you enjoy reading our articles and look forward to the next chapter of the News Blog team.
 
----
+## **Esra Kayabali**
+As an author, I’m committed to delivering timely information about the latest AWS innovations and launches to our global audience of builders, developers, and technology enthusiasts. I understand the importance of providing clear, accurate, and actionable content that helps you use AWS services effectively. Happy reading everyone!
 
-## Core Microservice
+## **Matheus Guimaraes**
+My specialties are .NET development and microservices, but I’ve always been a jack-of-all-trades and writing for this blog helps me to keep my knife sharp across all corners of modern technology, while also helping others do the same. Thousands of people read the AWS News Blog and use it as a go-to source to keep up with what’s new and to help them make decisions, so I know that what we are doing is meaningful work with huge impact.
 
-Provides foundational data and communication layer, including:  
-- **Amazon S3** bucket for data  
-- **Amazon DynamoDB** for data catalog  
-- **AWS Lambda** to write messages into the data lake and catalog  
-- **Amazon SNS** topic as the *hub*  
-- **Amazon S3** bucket for artifacts such as Lambda code
+## **Prasad Rao**
+Through my blogs, I strive to highlight not just the “what” of new services, but also the “why” and “how” they can transform businesses and user experiences. As a solutions architect specializing in Microsoft Workloads on AWS, I help customers migrate and modernize their workloads and build scalable architecture on AWS. I also mentor diverse people to excel in their cloud careers.
 
-> Only allow indirect write access to the data lake through a Lambda function → ensures consistency.
+## **Elizabeth Fuentes**
+Every time I start writing a new blog, I feel honored to be part of this team, to be able to experiment with something new before it’s released, and to be able to share my experience with the reader. This team is made up of specialists of all levels and from multiple countries and together, we are a multicultural and multi-specialty team. Thank you, reader, for being here.
 
----
+## **Betty Zheng (郑予彬)**
+Joining the News Blog team has transformed how I communicate about technology. With an ever-curious mindset, I approach each new announcement aiming to make innovative services accessible and engaging. By bringing my unique and diverse perspective to technical content, I strive to help developers truly enjoy exploring our latest technologies.
 
-## Front Door Microservice
-
-- Provides an API Gateway for external REST interaction  
-- Authentication & authorization based on **OIDC** via **Amazon Cognito**  
-- Self-managed *deduplication* mechanism using DynamoDB instead of SNS FIFO because:  
-  1. SNS deduplication TTL is only 5 minutes  
-  2. SNS FIFO requires SQS FIFO  
-  3. Ability to proactively notify the sender that the message is a duplicate  
+## **Micah Walter**
+As a senior solutions architect, I support enterprise customers in the New York City region and beyond. I advise executives, engineers, and architects at every step along their journey to the cloud, with a deep focus on sustainability and practical design.
 
 ---
 
-## Staging ER7 Microservice
-
-- Lambda “trigger” subscribed to the pub/sub hub, filtering messages by attribute  
-- Step Functions Express Workflow to convert ER7 → JSON  
-- Two Lambdas:  
-  1. Fix ER7 formatting (newline, carriage return)  
-  2. Parsing logic  
-- Result or error is pushed back into the pub/sub hub  
+I also want to give credit to our behind-the-scenes editor-in-chief, Jane Watson, and program manager, Jane Scolieri, who play an essential role in helping us get product launch news to you as soon as it happens, including the 60 launches we announced in one week at re:Invent 2024!
 
 ---
 
-## New Features in the Solution
+# **Share your feedback**
+At AWS, we are customer obsessed. We’re always focused on improving and providing a better customer experience, and we need your feedback to do so. Take our survey to share insights about your experience with the AWS News Blog and suggestions for how we can serve you even better.
 
-### 1. AWS CloudFormation Cross-Stack References
-Example *outputs* in the core microservice:
-```yaml
-Outputs:
-  Bucket:
-    Value: !Ref Bucket
-    Export:
-      Name: !Sub ${AWS::StackName}-Bucket
-  ArtifactBucket:
-    Value: !Ref ArtifactBucket
-    Export:
-      Name: !Sub ${AWS::StackName}-ArtifactBucket
-  Topic:
-    Value: !Ref Topic
-    Export:
-      Name: !Sub ${AWS::StackName}-Topic
-  Catalog:
-    Value: !Ref Catalog
-    Export:
-      Name: !Sub ${AWS::StackName}-Catalog
-  CatalogArn:
-    Value: !GetAtt Catalog.Arn
-    Export:
-      Name: !Sub ${AWS::StackName}-CatalogArn
+This survey is hosted by an external company. AWS handles your information as described in the AWS Privacy Notice. AWS will own the data gathered via this survey and will not share the information collected with survey respondents.
+
+— Channy
+

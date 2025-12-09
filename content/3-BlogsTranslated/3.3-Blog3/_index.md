@@ -1,123 +1,51 @@
 ---
-title: "Blog 3"
-date: "2025-09-22"
+
+title: "Blog 3: MasterClass enhances video quality and reduces costs with AWS Media Services"
+date: "2025-09-15"
 weight: 1
 chapter: false
-pre: " <b> 3.3. </b> "
----
+pre: " <b> 3.1. </b> "
+----------------------
 
-# Getting Started with Healthcare Data Lakes: Using Microservices
+{{% notice warning %}}
+⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
+{{% /notice %}}
 
-Data lakes can help hospitals and healthcare facilities turn data into business insights, maintain business continuity, and protect patient privacy. A **data lake** is a centralized, managed, and secure repository to store all your data, both in its raw and processed forms for analysis. Data lakes allow you to break down data silos and combine different types of analytics to gain insights and make better business decisions.
+# MasterClass enhances video quality and reduces costs with AWS Media Services
 
-This blog post is part of a larger series on getting started with setting up a healthcare data lake. In my final post of the series, *“Getting Started with Healthcare Data Lakes: Diving into Amazon Cognito”*, I focused on the specifics of using Amazon Cognito and Attribute Based Access Control (ABAC) to authenticate and authorize users in the healthcare data lake solution. In this blog, I detail how the solution evolved at a foundational level, including the design decisions I made and the additional features used. You can access the code samples for the solution in this Git repo for reference.
+by Dan Gehred and Matt Carter on 25 MAR 2025 in Amazon CloudFront, AWS Elemental MediaConvert, Direct-to-Consumer & Streaming, Industries, Media & Entertainment, Media Services, Networking & Content Delivery
 
----
+(image/blog/blog2_1)
 
-## Architecture Guidance
+For many, cooking alongside Gordon Ramsay or writing with Shonda Rhimes may seem like pure fantasy, but streaming platform MasterClass makes these experiences a reality. The streaming platform offers more than 200 classes, delivered by the world’s best instructors. With video at the core of the MasterClass experience, the company looked to Amazon Web Services (AWS) Media Services to help support its continued growth.
 
-The main change since the last presentation of the overall architecture is the decomposition of a single service into a set of smaller services to improve maintainability and flexibility. Integrating a large volume of diverse healthcare data often requires specialized connectors for each format; by keeping them encapsulated separately as microservices, we can add, remove, and modify each connector without affecting the others. The microservices are loosely coupled via publish/subscribe messaging centered in what I call the “pub/sub hub.”
+The company now uses AWS Elemental MediaConvert and Amazon CloudFront to support video transcoding and delivery, with AWS Partner Nomad Media as an orchestration layer. After migrating to AWS, including the transfer of its archive content, MasterClass saw significant video infrastructure improvements, including enhanced video quality; it also reduced video costs by more than half.
 
-This solution represents what I would consider another reasonable sprint iteration from my last post. The scope is still limited to the ingestion and basic parsing of **HL7v2 messages** formatted in **Encoding Rules 7 (ER7)** through a REST interface.
+“AWS provides a flexible solution that we can build on, so that we can create our own technology and IP around our media space,” said Paul Phipps, Senior Staff Software Engineer at MasterClass. “With MediaConvert and CloudFront specifically, we’ve dramatically reduced costs while improving streaming quality. We’ve also seen a reduction in buffering times and faster streaming across a variety of devices.”
 
-**The solution architecture is now as follows:**
+![Masterclass](/images/Blog/blog_3.jpg)
 
-> *Figure 1. Overall architecture; colored boxes represent distinct services.*
+## Improved transcoding efficiency with AWS Elemental MediaConvert
 
----
+When MasterClass launched in 2015, the company used a turnkey video solution to develop the platform. While that setup served them well for many years, the company’s needs grew as its content library expanded. Making more video classes available to subscribers required a more flexible and scalable solution, which it found in the file-based transcoding service AWS Elemental MediaConvert.
 
-While the term *microservices* has some inherent ambiguity, certain traits are common:  
-- Small, autonomous, loosely coupled  
-- Reusable, communicating through well-defined interfaces  
-- Specialized to do one thing well  
-- Often implemented in an **event-driven architecture**
+Today, MasterClass relies heavily on the Quality-Defined Variable Bitrate (QVBR) feature in MediaConvert. QVBR automatically allocates bits to maintain consistent video quality, confirming viewers enjoy an optimized experience, whether watching on a smart TV, computer, or mobile device. Previously, MasterClass had to first process files with FFmpeg, resulting in two compression steps. With its new setup, MasterClass sends native files directly into MediaConvert, leading to noticeably improved video quality, reduced artifacts, and faster content delivery for users.
 
-When determining where to draw boundaries between microservices, consider:  
-- **Intrinsic**: technology used, performance, reliability, scalability  
-- **Extrinsic**: dependent functionality, rate of change, reusability  
-- **Human**: team ownership, managing *cognitive load*
 
----
+## Seamless migration and enhanced content delivery
 
-## Technology Choices and Communication Scope
+Along with providing the orchestration layer, Nomad Media proved essential to a smooth transition, providing tools that enabled MasterClass to parallelize workflows with minimal disruption.
 
-| Communication scope                       | Technologies / patterns to consider                                                        |
-| ----------------------------------------- | ------------------------------------------------------------------------------------------ |
-| Within a single microservice              | Amazon Simple Queue Service (Amazon SQS), AWS Step Functions                               |
-| Between microservices in a single service | AWS CloudFormation cross-stack references, Amazon Simple Notification Service (Amazon SNS) |
-| Between services                          | Amazon EventBridge, AWS Cloud Map, Amazon API Gateway                                      |
+“We re-transcoded all of our content onto the cloud, so we could improve the quality of our legacy content with QVBR,” explained Phipps. “One of the great things about AWS is that every service is supported by a large infrastructure and serverless applications. Backed by that support, we were able to transcode most of our library in just a couple of days.”
 
----
+Nomad’s direct integration with the content delivery network (CDN) Amazon CloudFront also influenced MasterClass while mapping out its migration. After evaluating several third-party CDNs, MasterClass determined that Amazon CloudFront provided the best fit.
 
-## The Pub/Sub Hub
+“We found that Amazon CloudFront performed better or as well as the other CDNs we assessed, and it was much easier to implement in our workflow since we were already using AWS,” noted Phipps. “Also, there isn’t an associated storage consumption cost, which is a huge benefit.”
 
-Using a **hub-and-spoke** architecture (or message broker) works well with a small number of tightly related microservices.  
-- Each microservice depends only on the *hub*  
-- Inter-microservice connections are limited to the contents of the published message  
-- Reduces the number of synchronous calls since pub/sub is a one-way asynchronous *push*
+MasterClass was interested in a system that allowed for a high rate of cache reuse. Using CloudFront with Lambda@Edge, the company optimized its token authentication process. With this setup, its team can refresh tokens without changing the content path, enabling secure access and maintaining cache stability.
 
-Drawback: **coordination and monitoring** are needed to avoid microservices processing the wrong message.
+## Looking ahead with AWS
 
----
+With full autonomy over its media stack, MasterClass can now customize its video workflows and explore new feature implementations like content analysis powered by artificial intelligence (AI) or live streaming with real-time interactivity. As MasterClass continues to innovate and expand, AWS provides them with robust and flexible infrastructure that supports both their present needs and future ambitions.
 
-## Core Microservice
-
-Provides foundational data and communication layer, including:  
-- **Amazon S3** bucket for data  
-- **Amazon DynamoDB** for data catalog  
-- **AWS Lambda** to write messages into the data lake and catalog  
-- **Amazon SNS** topic as the *hub*  
-- **Amazon S3** bucket for artifacts such as Lambda code
-
-> Only allow indirect write access to the data lake through a Lambda function → ensures consistency.
-
----
-
-## Front Door Microservice
-
-- Provides an API Gateway for external REST interaction  
-- Authentication & authorization based on **OIDC** via **Amazon Cognito**  
-- Self-managed *deduplication* mechanism using DynamoDB instead of SNS FIFO because:  
-  1. SNS deduplication TTL is only 5 minutes  
-  2. SNS FIFO requires SQS FIFO  
-  3. Ability to proactively notify the sender that the message is a duplicate  
-
----
-
-## Staging ER7 Microservice
-
-- Lambda “trigger” subscribed to the pub/sub hub, filtering messages by attribute  
-- Step Functions Express Workflow to convert ER7 → JSON  
-- Two Lambdas:  
-  1. Fix ER7 formatting (newline, carriage return)  
-  2. Parsing logic  
-- Result or error is pushed back into the pub/sub hub  
-
----
-
-## New Features in the Solution
-
-### 1. AWS CloudFormation Cross-Stack References
-Example *outputs* in the core microservice:
-```yaml
-Outputs:
-  Bucket:
-    Value: !Ref Bucket
-    Export:
-      Name: !Sub ${AWS::StackName}-Bucket
-  ArtifactBucket:
-    Value: !Ref ArtifactBucket
-    Export:
-      Name: !Sub ${AWS::StackName}-ArtifactBucket
-  Topic:
-    Value: !Ref Topic
-    Export:
-      Name: !Sub ${AWS::StackName}-Topic
-  Catalog:
-    Value: !Ref Catalog
-    Export:
-      Name: !Sub ${AWS::StackName}-Catalog
-  CatalogArn:
-    Value: !GetAtt Catalog.Arn
-    Export:
-      Name: !Sub ${AWS::StackName}-CatalogArn
+“Having control over our own tech stack is essential for scaling our offerings and continuing to innovate,” concluded Phipps. “AWS gives us the flexibility we need to build a future-proof solution that supports our continued growth.”
