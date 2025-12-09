@@ -164,7 +164,7 @@ Nền tảng InsightHR được xây dựng trên kiến trúc serverless sử d
 
 **8. Proposed Architecture Diagram:**
 
-![Architecture Diagram](/images/2-Proposal/noRAG2.drawio.png)
+![Architecture Diagram](/images/diagram.png)
 
 **9. Tools Proposed for This Project:**
 
