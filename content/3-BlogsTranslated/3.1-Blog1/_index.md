@@ -3,12 +3,8 @@ title: "Blog : Meeting the AWS Team"
 date: "2025-05-05"
 weight: 1
 chapter: false
-pre: " <b> 4.1. </b> "
+pre: " <b> 3.1. </b> "
 ---
-
-{{% notice warning %}}
-⚠️ **Lưu ý:** Bài viết dưới đây được giữ **nguyên văn 100%** theo yêu cầu của bạn.
-{{% /notice %}}
 
 # **Meet the AWS News Blog team!**
 
