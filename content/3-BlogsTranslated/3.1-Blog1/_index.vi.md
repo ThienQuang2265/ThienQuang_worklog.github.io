@@ -4,7 +4,7 @@ title: "Blog:  Gặp gỡ đội ngũ AWS News Blog!"
 date: "2025-09-15"
 weight: 1
 chapter: false
-pre: " <b> 3.1. </b> "
+pre: " <b> 3.1 </b> "
 ----------------------
 
 # Gặp gỡ đội ngũ AWS News Blog!

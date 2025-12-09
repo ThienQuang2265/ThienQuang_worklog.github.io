@@ -3,7 +3,7 @@ title: "Blog : Meeting the AWS Team"
 date: "2025-05-05"
 weight: 1
 chapter: false
-pre: " <b> 3.1. </b> "
+pre: " <b> 3.1 </b> "
 ---
 
 # **Meet the AWS News Blog team!**

@@ -3,7 +3,7 @@ title: "Blog Vận hành AWS Cloud – Quản lý AWS Config Rules with Remediat
 date: "2025-05-05"
 weight: 1
 chapter: false
-pre: " <b> 3.2. </b> "
+pre: " <b> 3.2 </b> "
 ---
 
 # **Quản lý AWS Config Rules with Remediation với AWS Config Conformance Pack**

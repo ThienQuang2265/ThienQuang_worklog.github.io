@@ -4,7 +4,7 @@ title: "MasterClass nâng cao chất lượng video và giảm chi phí với AW
 date: "2025-03-25"
 weight: 3
 chapter: false
-pre: " <b> 3.3. </b> "
+pre: " <b> 3.3 </b> "
 ----------------------
 
 # MasterClass nâng cao chất lượng video và giảm chi phí với các Dịch vụ AWS Media
