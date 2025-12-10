@@ -11,15 +11,13 @@ pre: " <b> 3.3 </b> "
 
 by Dan Gehred and Matt Carter on 25 MAR 2025 in Amazon CloudFront, AWS Elemental MediaConvert, Direct-to-Consumer & Streaming, Industries, Media & Entertainment, Media Services, Networking & Content Delivery
 
-(image/blog/blog2_1)
-
 For many, cooking alongside Gordon Ramsay or writing with Shonda Rhimes may seem like pure fantasy, but streaming platform MasterClass makes these experiences a reality. The streaming platform offers more than 200 classes, delivered by the world’s best instructors. With video at the core of the MasterClass experience, the company looked to Amazon Web Services (AWS) Media Services to help support its continued growth.
 
 The company now uses AWS Elemental MediaConvert and Amazon CloudFront to support video transcoding and delivery, with AWS Partner Nomad Media as an orchestration layer. After migrating to AWS, including the transfer of its archive content, MasterClass saw significant video infrastructure improvements, including enhanced video quality; it also reduced video costs by more than half.
 
 “AWS provides a flexible solution that we can build on, so that we can create our own technology and IP around our media space,” said Paul Phipps, Senior Staff Software Engineer at MasterClass. “With MediaConvert and CloudFront specifically, we’ve dramatically reduced costs while improving streaming quality. We’ve also seen a reduction in buffering times and faster streaming across a variety of devices.”
 
-![Masterclass](/images/Blog/blog_3.jpg)
+![Masterclass](/images/Blog/Blog3.jpg)
 
 ## Improved transcoding efficiency with AWS Elemental MediaConvert
 

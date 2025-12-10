@@ -21,7 +21,8 @@ pre: " <b> 3.3 </b> "
 
 Công ty hiện sử dụng **AWS Elemental MediaConvert** và **Amazon CloudFront**, với Nomad Media làm lớp điều phối, giúp tối ưu chuyển mã và phân phối nội dung video. Sau khi di chuyển hạ tầng video sang AWS, MasterClass ghi nhận **chất lượng video cải thiện đáng kể**, đồng thời **giảm hơn một nửa chi phí video**.
 
-![Masterclass](/images/Blog/blog_3.jpg)
+![Masterclass](/images/Blog/Blog3.jpg)
+
 
 ## Cải thiện hiệu quả chuyển mã với AWS Elemental MediaConvert
 

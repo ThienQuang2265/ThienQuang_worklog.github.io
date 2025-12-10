@@ -21,23 +21,32 @@ pre: " <b> 4. </b> "
 
 Trong quá trình thực tập, em đã tham gia 2 events, với mỗi event là một trải nghiệm đáng nhớ với những kiến thức mới, hay và bổ ích, cùng với đó là nhứng món quà và những khoảnh khắc rất tuyệt vời.
 
-### [Event 1](4.1-Event1/)
-&emsp;**Tên sự kiện:** GenAI-powered App-DB Modernization workshop
+### [Vietnam Cloud Day 2025](4.1-Event1/)  
+&emsp;**Tên sự kiện:** Vietnam Cloud Day 2025 – Ho Chi Minh City Connect Edition for Builders (GenAI & Data Track)  
 
-&emsp;**Thời gian:** 09:00 ngày 13/08/2025
+&emsp;**Thời gian:** 09:00, Thứ Năm, ngày 18 tháng 9 năm 2025  
 
-&emsp;**Địa điểm:** Tầng 26, tòa nhà Bitexco, số 02 đường Hải Triều, phường Sài Gòn, thành phố Hồ Chí Minh
+&emsp;**Địa điểm:** AWS Event Hall, Tầng 26, Bitexco Tower, TP. Hồ Chí Minh  
 
-&emsp;**Vai trò trong sự kiện:** Người tham dự 
+&emsp;**Vai trò:** Người tham dự 
 
 
 
-### [Event 2](4.2-Event2/)
-&emsp;**Tên sự kiện:** GenAI-powered App-DB Modernization workshop
+### [Workshop: Data Science on AWS](4.3-Event/)  
+&emsp;**Tên sự kiện:** Workshop: Data Science on AWS  
 
-&emsp;**Thời gian:** 09:00 ngày 13/08/2025
+&emsp;**Thời gian:** 09:00, Thứ Năm, ngày 16 tháng 10 năm 2025  
 
-&emsp;**Địa điểm:** Tầng 26, tòa nhà Bitexco, số 02 đường Hải Triều, phường Sài Gòn, thành phố Hồ Chí Minh
+&emsp;**Địa điểm:** Đại học FPT TP. Hồ Chí Minh  
 
-&emsp;**Vai trò trong sự kiện:** Người tham dự 
+&emsp;**Vai trò:** Người tham dự  
 
+
+### [CloudThinker: Agentic AI & Orchestration on AWS](4.7-Event/)  
+&emsp;**Tên sự kiện:** CloudThinker: Agentic AI & Orchestration on AWS  
+
+&emsp;**Thời gian:** 09:00, Thứ Sáu, ngày 5 tháng 12 năm 2025  
+
+&emsp;**Địa điểm:** AWS Event Hall, Tầng 26, Bitexco Tower, TP. Hồ Chí Minh  
+
+&emsp;**Vai trò:** Người tham dự  

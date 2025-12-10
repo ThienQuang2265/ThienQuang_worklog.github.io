@@ -1,5 +1,5 @@
 ---
-title: "Event 1: Vietnam Cloud Day 2025"
+title: "Event: Vietnam Cloud Day 2025"
 weight: 1
 chapter: false
 pre: " <b> 4.1. </b> "
@@ -234,7 +234,11 @@ The **“GenAI-powered App-DB Modernization”** workshop was highly valuable, s
 
 #### Event Photos
 
-_Add your event photos here_
+- [Image 1](/images/CloudDay_1.jpg)
+- [Image 2](/images/CloudDay_2.jpg)
+- [Image 3](/images/CloudDay_3.jpg)
+- [Image 4](/images/CloudDay_4.jpg)
+
 
 > Overall, the workshop provided both technical knowledge and a new perspective on application design, system modernization, and team collaboration.
 
